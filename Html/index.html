@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essay Practise</title>
+    <link rel="stylesheet" href="..\styles\index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nav-bar">
+        <span id="time" class="time"></span>
+        <span class="buttons">
+          <button id="start">Start</button>
+          <button id="stop">stop</button>
+          <button id="reset">Reset</button>
+        </span>
+        <button id="save">Save Answer</button>
+        <div class="extra-bar">
+          <span id="wordCount">Word Count: <span>0</span> </span>
+          <span id="characterCount">Character Count: <span>0</span> </span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="question">
+          <input type="text" id="title" class="title" placeholder="Title" />
+          <textarea
+            id="questionText"
+            type="text"
+            placeholder="Type your question here..."
+          ></textarea>
+          <button id="setQuestion">Set question</button>
+          <img src="" alt="select a image to display" id="displayImage"/>
+          <input type="file" accept="image/*" id="inputImage"/>
+        </div>
+        <div class="answer">
+          <textarea
+            id="answerText"
+            type="text"
+            placeholder="Start writing answer... Don't forget to turn on the timer"
+          ></textarea>
+        </div>
+      </div>
+      <button id="clearLocal">Clear Local Storage</button>
+    </div>
+    <script src="..\dist\index.js"></script>
+  </body>
+</html>
